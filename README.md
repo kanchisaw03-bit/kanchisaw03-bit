@@ -17,7 +17,6 @@
 
 ![Headline](headline.svg)
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=C9A0DC&center=true&vCenter=true&multiline=true&repeat=true&width=800&height=100&lines=Full-Stack+Developer+%7C+AI+%26+ML+Engineer;Building+intelligent+systems+%E2%9C%A8;Where+code+meets+consciousness" alt="Typing SVG" />
 
 </div>
 
