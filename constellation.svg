@@ -1,0 +1,129 @@
+<svg width="800" height="500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="nodeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#E8B4F0;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#C9A0DC;stop-opacity:0.3"/>
+    </radialGradient>
+    
+    <filter id="skillGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <linearGradient id="lineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#C9A0DC;stop-opacity:0.3"/>
+      <stop offset="50%" style="stop-color:#DDB6F2;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#C9A0DC;stop-opacity:0.3"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="800" height="500" fill="#0d1117"/>
+  
+  <!-- Connection Lines between skill nodes -->
+  <line x1="200" y1="150" x2="350" y2="200" stroke="url(#lineGradient)" stroke-width="1.5">
+    <animate attributeName="opacity" values="0.3;0.7;0.3" dur="4s" repeatCount="indefinite"/>
+  </line>
+  <line x1="350" y1="200" x2="450" y2="180" stroke="url(#lineGradient)" stroke-width="1.5">
+    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="5s" repeatCount="indefinite"/>
+  </line>
+  <line x1="450" y1="180" x2="600" y2="150" stroke="url(#lineGradient)" stroke-width="1.5">
+    <animate attributeName="opacity" values="0.3;0.7;0.3" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  <line x1="200" y1="150" x2="250" y2="300" stroke="url(#lineGradient)" stroke-width="1.5">
+    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="5.5s" repeatCount="indefinite"/>
+  </line>
+  <line x1="250" y1="300" x2="400" y2="350" stroke="url(#lineGradient)" stroke-width="1.5">
+    <animate attributeName="opacity" values="0.3;0.7;0.3" dur="4s" repeatCount="indefinite"/>
+  </line>
+  <line x1="400" y1="350" x2="550" y2="320" stroke="url(#lineGradient)" stroke-width="1.5">
+    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="6s" repeatCount="indefinite"/>
+  </line>
+  <line x1="550" y1="320" x2="600" y2="150" stroke="url(#lineGradient)" stroke-width="1.5">
+    <animate attributeName="opacity" values="0.3;0.7;0.3" dur="5s" repeatCount="indefinite"/>
+  </line>
+  <line x1="350" y1="200" x2="400" y2="350" stroke="url(#lineGradient)" stroke-width="1.5">
+    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="4.5s" repeatCount="indefinite"/>
+  </line>
+  
+  <!-- Skill Node: React -->
+  <circle cx="200" cy="150" r="25" fill="url(#nodeGlow)" filter="url(#skillGlow)">
+    <animate attributeName="r" values="25;28;25" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <text x="200" y="157" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">React</text>
+  
+  <!-- Skill Node: Python -->
+  <circle cx="350" cy="200" r="30" fill="url(#nodeGlow)" filter="url(#skillGlow)">
+    <animate attributeName="r" values="30;33;30" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+  <text x="350" y="207" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Python</text>
+  
+  <!-- Skill Node: Node.js -->
+  <circle cx="450" cy="180" r="26" fill="url(#nodeGlow)" filter="url(#skillGlow)">
+    <animate attributeName="r" values="26;29;26" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <text x="450" y="187" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Node.js</text>
+  
+  <!-- Skill Node: AI/ML -->
+  <circle cx="600" cy="150" r="32" fill="url(#nodeGlow)" filter="url(#skillGlow)">
+    <animate attributeName="r" values="32;35;32" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  <text x="600" y="157" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">AI/ML</text>
+  
+  <!-- Skill Node: Django -->
+  <circle cx="250" cy="300" r="24" fill="url(#nodeGlow)" filter="url(#skillGlow)">
+    <animate attributeName="r" values="24;27;24" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  <text x="250" y="307" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Django</text>
+  
+  <!-- Skill Node: LangChain -->
+  <circle cx="400" cy="350" r="28" fill="url(#nodeGlow)" filter="url(#skillGlow)">
+    <animate attributeName="r" values="28;31;28" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+  <text x="400" y="356" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">LangChain</text>
+  
+  <!-- Skill Node: Tailwind -->
+  <circle cx="550" cy="320" r="25" fill="url(#nodeGlow)" filter="url(#skillGlow)">
+    <animate attributeName="r" values="25;28;25" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <text x="550" y="327" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Tailwind</text>
+  
+  <!-- Floating particles around constellation -->
+  <circle cx="300" cy="100" r="2" fill="#DDB6F2" opacity="0.6">
+    <animate attributeName="cy" values="100;90;100" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="500" cy="120" r="1.5" fill="#E8B4F0" opacity="0.7">
+    <animate attributeName="cy" values="120;110;120" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="150" cy="250" r="2" fill="#C9A0DC" opacity="0.5">
+    <animate attributeName="cy" values="250;240;250" dur="4.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="4.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="650" cy="200" r="1.5" fill="#DDB6F2" opacity="0.6">
+    <animate attributeName="cy" values="200;190;200" dur="5.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="5.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="320" cy="400" r="2" fill="#E8B4F0" opacity="0.7">
+    <animate attributeName="cy" values="400;390;400" dur="4s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="700" cy="280" r="1.5" fill="#C9A0DC" opacity="0.6">
+    <animate attributeName="cy" values="280;270;280" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Title -->
+  <text x="400" y="50" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#E8B4F0" text-anchor="middle" filter="url(#skillGlow)">
+    Tech Constellation
+  </text>
+</svg>
